@@ -38,6 +38,7 @@ executables:
   haskell-starter:
     source-dirs: exec
     main: Main.hs
+    dependencies: haskell-starter
 
 tests:
   spec:

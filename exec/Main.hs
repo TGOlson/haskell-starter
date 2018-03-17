@@ -1,4 +1,6 @@
 module Main ( main ) where
 
+import Data.AlwaysTrue
+
 main :: IO ()
-main = putStrLn "Hello!"
+main = print alwaysTrue
