@@ -1,6 +1,6 @@
 module Main ( main ) where
 
-import Data.AlwaysTrue
+import Data.RequestExample
 
 main :: IO ()
-main = print alwaysTrue
+main = getTodo 1 >>= print

@@ -25,14 +25,18 @@ default-extensions:
   - ScopedTypeVariables
 
 dependencies:
+  - aeson
   - base >= 4.7 && < 5
+  - lens
   - unordered-containers
+  - wreq
 
 library:
   source-dirs: lib
   exposed-modules:
     - Data.AlwaysTrue
     - Data.Quicksort
+    - Data.RequestExample
 
 executables:
   haskell-starter:
