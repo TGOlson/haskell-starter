@@ -31,9 +31,22 @@ dependencies:
 library:
   source-dirs: lib
   exposed-modules:
+    - Data.AlwaysTrue
     - Data.Quicksort
 
 executables:
   haskell-starter:
-    source-dirs:      exec
-    main:             Main.hs
+    source-dirs: exec
+    main: Main.hs
+
+tests:
+  spec:
+    source-dirs: test
+    main: Main.hs
+    dependencies:
+      - haskell-starter
+      - hspec
+      - QuickCheck
+      - quickcheck-instances
+    ghc-options:
+      - -fno-warn-orphans
